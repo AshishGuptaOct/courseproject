@@ -16,3 +16,19 @@ puts 'Angry Boss'
 puts 'What do you want?'
 answer = gets.chomp
 puts 'WHADDYA MEAN "' + answer.upcase + '"?!? YOU\'RE FIRED!!' 
+
+
+puts 'Table of Contents'
+line_width = 50
+header = 'Table of Contents'
+chap1 = 'Chapter 1: Getting Started'
+chap1_page = 'page 1'
+chap2 = 'Chapter 2: Numbers'
+chap2_page = 'page 9'
+chap3 = 'Chapter 3: Letters'
+chap3_page = 'page 13'
+
+puts (header.center(line_width))
+puts (chap1.ljust(line_width/2)) + (chap1_page.rjust(line_width/2))
+puts (chap2.ljust(line_width/2)) + (chap2_page.rjust(line_width/2))
+puts (chap3.ljust(line_width/2)) + (chap3_page.rjust(line_width/2))
