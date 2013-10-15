@@ -12,3 +12,7 @@ puts 'Your full name is ' + first_name +' '+ middle_name + ' ' + last_name
 full_length = first_name.length + middle_name.length + last_name.length
 puts 'The length of your full name is ' + full_length.to_s
 
+puts 'Angry Boss'
+puts 'What do you want?'
+answer = gets.chomp
+puts 'WHADDYA MEAN "' + answer.upcase + '"?!? YOU\'RE FIRED!!' 
