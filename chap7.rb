@@ -36,5 +36,31 @@ while true
 	
 end
 
+puts 'Deaf Grandma Extended'
+puts 'Say something to Grandma'
+bye_count = 0
+
+while true
+	you_speak = gets.chomp
+
+	if you_speak == 'BYE'	
+		bye_count = bye_count +1
+	else bye_count = 0
+	end
+
+	if bye_count == 3
+		puts 'Bye Sonny'	
+		break 
+	end
+	
+	if you_speak != you_speak.upcase
+		puts 'HUH?! SPEAK UP, SONNY!'
+	else 
+		year = 1930 + rand(21)
+		puts 'NO, NOT SINCE ' + year.to_s
+	end
+	
+end
+
 
 
