@@ -19,20 +19,22 @@ puts 'Take one down, pass it around, no more bottles of beer on the wall!'
 puts 'Deaf Grandma'
 puts 'Say something to Grandma'
 
-
 while true
 	you_speak = gets.chomp
 
-	if you_speak == you_speak.upcase
-		year = 1930 + rand(21)
-		puts 'NO, NOT SINCE ' + year.to_s
-	else puts 'HUH?! SPEAK UP, SONNY!'
-	end
-
 	if you_speak == 'BYE'
+		puts 'Bye Sonny'	
 		break
 	end
+	
+	if you_speak != you_speak.upcase
+		puts 'HUH?! SPEAK UP, SONNY!'
+	else 
+		year = 1930 + rand(21)
+		puts 'NO, NOT SINCE ' + year.to_s
+	end
+	
 end
-	puts 'Bye Sonny'
+
 
 
