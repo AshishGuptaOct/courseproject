@@ -102,7 +102,50 @@ number_array.push 3
 
 puts number_array
 
+puts '6. Uniques'
 
+number_array = number_array.uniq
+
+puts number_array
+
+puts '7. Difference between array and hash'
+
+#Array is indexed starting at 0. In a hash, each element can be 
+#linked to another key eg. john has a ford.
+
+puts 'Hash using 1.8 and 1.9'
+
+grades = { "jane" => 10, "jim" => 6}
+
+h = {a:1, b:2, c:3, d:4}
+
+puts 'exercise 9'
+
+h = {a:1, b:2, c:3, d:4}
+
+puts [:b]
+
+puts 'exercise 10'
+
+h [:e] =5
+
+puts h
+
+puts 'exercise 13'
+
+h.delete_if {|key,value| value <3.5}
+
+puts h
+
+puts 'exercise 14'
+
+hash_1 = {a:[1,2], b:2, c:3, d:4}
+
+puts hash_1
+
+arr = [{a:[1,2], b:2, c:3, d:4}, {a:1}]
+
+puts arr
 
 
 
